@@ -1,3 +1,9 @@
+local function load(package)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/i-reddd/packages/main/' .. tostring(package) .. '.lua'))()
+end
+
+load('log')
+
 while true do
 	local Animate = game.Players.LocalPlayer.Character.Animate
 	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
@@ -8,9 +14,3 @@ while true do
 	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=707829716"
 wait(1)
 end
-
-local function load(package)
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/i-reddd/packages/main/' .. tostring(package) .. '.lua'))()
-end
-
-load('log')
